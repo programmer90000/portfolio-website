@@ -1,0 +1,38 @@
+#work {
+    display: grid;
+}
+
+#work h1 {
+    position: relative;
+    display: inline-block;
+    margin-left: 150px;
+    color: #3571c0;
+}
+
+#work h1 span {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#work h1::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: #3571c0;
+    position: absolute;
+    right: -10px;
+    top: 0;
+}
+
+#images {
+    width: 80%;
+}
+
+#first-image img {
+    width: 100%;
+}
+
+.other-image {
+    width: 50%;
+}
