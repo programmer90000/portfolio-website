@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-#categoryGrid {
-    justify-content: center;
+#all {
+    /*justify-content: center;*/
     display: grid;
     grid-template-rows: 200px 200px 200px 200px;
     grid-template-columns: 400px 400px;
@@ -65,3 +65,54 @@
     width: 175px;
     margin-bottom: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#all {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#all h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin-left: 150px;
+    color: #3571c0;
+}
+
+#all h1 span {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#all h1::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: #3571c0;
+    position: absolute;
+    right: -10px;
+    top: 0;
+}
+
+#all h1 ~ * {
+    position: relative;
+    left: 250px;
+  }
