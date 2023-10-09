@@ -1,38 +1,67 @@
-#work {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#categoryGrid {
+    justify-content: center;
     display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 400px 400px;
+    grid-template-areas:
+    "main-img main-img"
+    "main-img main-img"
+    "small-img-1 small-img-2"
+    "small-img-3 small-img-4"
+    ;
 }
 
-#work h1 {
-    position: relative;
-    display: inline-block;
-    margin-left: 150px;
-    color: #3571c0;
+#main-img {
+    grid-area: main-img;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/prework-study-guide-website.png");
+    border: 5px solid #ACC2CF;
 }
 
-#work h1 span {
-    display: block;
-    padding-bottom: 5px;
+#small-img-1 {
+    grid-area: small-img-1;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/code-refactor-1.png");
+    border: 5px solid #ACC2CF;
 }
 
-#work h1::after {
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 100%;
-    background-color: #3571c0;
-    position: absolute;
-    right: -10px;
-    top: 0;
+#small-img-2 {
+    grid-area: small-img-2;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/code-refactor-2.png");
+    border: 5px solid #ACC2CF;
 }
 
-#images {
-    width: 80%;
+#small-img-3 {
+    grid-area: small-img-3;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/code-refactor-3.png");
+    border: 5px solid #ACC2CF;
 }
 
-#first-image img {
-    width: 100%;
+#small-img-4 {
+    grid-area: small-img-4;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/img-1.jpg");
+    border: 5px solid #ACC2CF;
 }
 
-.other-image {
-    width: 50%;
+.categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+}
+
+.text {
+    background-color: #acc2cf;
+    padding: 10px;
+    color: #000000;
+    font-size: 18px;
+    width: 175px;
+    margin-bottom: 20px;
 }
