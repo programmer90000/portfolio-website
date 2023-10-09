@@ -31,7 +31,7 @@
 
 #small-img-2 {
     grid-area: small-img-2;
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/code-refactor-2.png");
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/img-2.jpg");
     border: 5px solid #ACC2CF;
 }
 
@@ -55,6 +55,8 @@
     cursor: pointer;
     display: grid;
     align-content: end;
+    text-decoration: none;
+    color: #000000;
 }
 
 .text {
