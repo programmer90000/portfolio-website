@@ -13,11 +13,22 @@ header {
     justify-content:space-between;
 }
 
+#profile {
+    display: flex;
+    flex-direction: row;
+}
+
 header h1 {
     color: #31343d;
     background-color: #91CBCE;
     padding: 5px 5px 5px 50px;
     margin: 10px 0;
+    margin-right: 20px;
+}
+
+header img {
+    height: 70px;
+    padding: 5px 0;
 }
 
 #header-links  {
@@ -101,10 +112,110 @@ header h1 {
 
 /* End of about me section */
 
+/* Start of work section */
+
+#work-section {
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 400px 400px;
+    grid-template-areas:
+    "main-img main-img"
+    "main-img main-img"
+    "small-img-1 small-img-2"
+    "small-img-3 small-img-4"
+    ;
+    margin: 50px 0;
+    position: relative;
+}
+
+#work-section h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin-left: 150px;
+    color: #3571c0;
+}
+
+#work-section h1 span {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#work-section h1::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: #3571c0;
+    position: absolute;
+    right: -10px;
+    top: 0;
+}
+
+#work-section h1 ~ * {
+    position: relative;
+    left: 250px;
+}
+
+#work-section #main-img {
+    grid-area: main-img;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("images/prework-study-guide-website.png");
+    border: 5px solid #ACC2CF;
+}
+
+#work-section #small-img-1 {
+    grid-area: small-img-1;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("images/code-refactor-1.png");
+    border: 5px solid #ACC2CF;
+}
+
+#work-section #small-img-2 {
+    grid-area: small-img-2;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("images/img-2.jpg");
+    border: 5px solid #ACC2CF;
+}
+
+#work-section #small-img-3 {
+    grid-area: small-img-3;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("images/code-refactor-3.png");
+    border: 5px solid #ACC2CF;
+}
+
+#work-section #small-img-4 {
+    grid-area: small-img-4;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("images/img-1.jpg");
+    border: 5px solid #ACC2CF;
+}
+
+#work-section .categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+    text-decoration: none;
+    color: #000000;
+}
+
+#work-section .categoryGridArea .text {
+    background-color: #acc2cf;
+    padding: 10px;
+    color: #000000;
+    font-size: 18px;
+    width: 175px;
+    margin-bottom: 20px;
+}
+
+/* End of my work section */
+
 /* Start of contact me section */
 
 #contact-me {
     display: flex;
+    margin-bottom: 50px;
 }
 
 #contact-me h1 {
@@ -132,6 +243,7 @@ header h1 {
 
 #contact-me .links {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 50px;
     align-items: center;
 }
@@ -146,3 +258,62 @@ header h1 {
 }
 
 /* End of contact me section */
+
+@media screen and (max-width: 1110px) {
+    #about-me h1 {
+        margin-left: 50px;
+    }
+    #work-section h1 {
+        margin-left: 50px;
+    }
+    #contact-me h1 {
+        margin-left: 50px;
+    }
+
+    #work-section {
+        grid-template-columns: 70%;
+        grid-template-areas:
+        "main-img"
+        "small-img-1"
+        "small-img-2"
+        "small-img-3"
+        "small-img-4"
+        ;
+    }
+
+    #work-section h1  ~ * {
+        left: 175px;
+    }
+
+}
+
+@media screen and (max-width: 755px) {
+    header {
+        flex-direction: column;
+    }
+    #contact-me .links {
+        flex-direction: column;
+        flex-wrap:nowrap;
+    }
+    #contact-me .links a {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #about-me h1 {
+        margin-left: 0;
+    }
+    #work-section h1 {
+        margin-left: 0;
+    }
+    #contact-me h1 {
+        margin-left: 0;
+    }
+    #work-section h1  ~ * {
+        left: 100px;
+    }
+    #contact-me .links a {
+        margin-left: 10px;
+    }
+}
