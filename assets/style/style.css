@@ -160,31 +160,31 @@ header img {
 
 #work-section #main-img {
     grid-area: main-img;
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("images/prework-study-guide-website.png");
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/prework-study-guide-website.png");
     border: 5px solid #ACC2CF;
 }
 
 #work-section #small-img-1 {
     grid-area: small-img-1;
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("images/code-refactor-1.png");
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/code-refactor-1.png");
     border: 5px solid #ACC2CF;
 }
 
 #work-section #small-img-2 {
     grid-area: small-img-2;
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("images/img-2.jpg");
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/img-2.jpg");
     border: 5px solid #ACC2CF;
 }
 
 #work-section #small-img-3 {
     grid-area: small-img-3;
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("images/code-refactor-3.png");
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/code-refactor-3.png");
     border: 5px solid #ACC2CF;
 }
 
 #work-section #small-img-4 {
     grid-area: small-img-4;
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("images/img-1.jpg");
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/img-1.jpg");
     border: 5px solid #ACC2CF;
 }
 
