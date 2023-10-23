@@ -89,6 +89,7 @@ header img {
 #about-me h1 span {
     display: block;
     padding-bottom: 5px;
+    width: 120px;
 }
 
 #about-me h1::after {
@@ -135,6 +136,7 @@ header img {
     display: inline-block;
     margin-left: 150px;
     color: #3571c0;
+    width: 120px;
 }
 
 #work-section h1 span {
@@ -155,7 +157,7 @@ header img {
 
 #work-section h1 ~ * {
     position: relative;
-    left: 250px;
+    left: 310px;
 }
 
 #work-section #main-img {
@@ -228,6 +230,7 @@ header img {
 #contact-me h1 span {
     display: block;
     padding-bottom: 5px;
+    width: 120px;
 }
 
 #contact-me h1::after {
@@ -261,13 +264,14 @@ header img {
 
 @media screen and (max-width: 1110px) {
     #about-me h1 {
-        margin-left: 50px;
+        margin-left: 25px;
+        display: block;
     }
     #work-section h1 {
-        margin-left: 50px;
+        margin-left: 25px;
     }
     #contact-me h1 {
-        margin-left: 50px;
+        margin-left: 25px;
     }
 
     #work-section {
@@ -281,8 +285,13 @@ header img {
         ;
     }
 
+    #work-section h1 {
+        right: 0;
+    }
+
     #work-section h1  ~ * {
         left: 175px;
+        top: 50px;
     }
 
 }
@@ -301,17 +310,49 @@ header img {
 }
 
 @media screen and (max-width: 650px) {
-    #about-me h1 {
-        margin-left: 0;
+    #about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+    #about-me h1::after {
+        display: none;
+    }
+    #about-me h1 span {
+        display: inline;
+    }
+    #work-section {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
     }
     #work-section h1 {
-        margin-left: 0;
+        display: flex;
+        margin: 0 auto;
+    }
+    #work-section h1::after {
+        display: none;
+    }
+    #work-section h1  ~ * {
+        left: 0px;
+    }
+    #contact-me {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
     }
     #contact-me h1 {
         margin-left: 0;
+        margin-bottom: 20px;
     }
-    #work-section h1  ~ * {
-        left: 100px;
+    #contact-me h1 span {
+        display: inline;
+    }
+    #contact-me h1::after {
+        display: none;
+    }
+    #contact-me .links {
+        margin: 0;
     }
     #contact-me .links a {
         margin-left: 10px;
